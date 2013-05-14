@@ -1,0 +1,287 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math">
+<head>
+<title>Tutoria II</title>
+<script src="http://sources.disruptive-innovations.com/jscssp/trunk/cssParser.js" type="text/javascript">
+<!---->
+</script>
+<script type="text/javascript">
+                    var achievementThresholds = [];
+                    achievementThresholds[0] = 5;
+                    achievementThresholds[1] = 10
+                    achievementThresholds[2] = 20;
+
+                    window.setTimeout(function(){
+                        // TODO results screen, fade out
+                        window.history.back();
+                    }, 40000);
+                </script>
+<script src="../js/illusion.js" type="text/javascript">
+<!---->
+</script>
+</head>
+<body bgcolor="#442222" onload="illusionInit(-400, 400, -400, 400, 1.4, 3, 2, 8, achievementThresholds);">
+<center>
+<svg viewBox="-400 -400 800 800" height="800" width="800">
+<g transform="scale(8)">
+<g>
+<rect height="800" width="800" y="-400" x="-400" fill="#442222">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#442222" attributeType="XML"/>
+</rect>
+</g>
+<g>
+<g>
+<defs>
+<path d="                             M 3,-0.2631578947368421                             L 3,0.2631578947368421                             L 2.4,0.25                             A 2.4,2.4 0 1,1 2.4,-0.25                             z" id="player-outline">
+<animateTransform name="player-rotation" begin="0s" fill="freeze" additive="replace" dur="5s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" repeatCount="indefinite"/>
+</path>
+<rect stroke-width="0.4" stroke="white" fill="white" height="0.5" width="1" y="-0.25" x="-0.5" id="player-missile"/>
+</defs>
+<clipPath id="outline-clip">
+<use xlink:href="#player-outline"/>
+</clipPath>
+<g id="color-wheels">
+<path toangle="90" fromangle="-90" fill="pink" stroke="none" d="             M 0,0             L 0.000000006282137802222821,-3.5             A 3.5,3.5 1 1,1 0.000000006282137802222821,3.5             z" clip-path="url(#outline-clip)"/>
+<path toangle="270" fromangle="90" fill="#3333ff" stroke="none" d="             M 0,0             L 0.000000006282137802222821,3.5             A 3.5,3.5 1 1,1 -0.000000018846412629512343,-3.5             z" clip-path="url(#outline-clip)"/>
+</g>
+<use fill="none" stroke-width="0.4" xlink:href="#player-outline" stroke="white">
+<set attributeName="stroke" begin="0s" fill="freeze" additive="replace" to="white" attributeType="XML"/>
+</use>
+<circle fill="#333366" stroke-width="0.4" r="1.4" cy="0" cx="0" stroke="white">
+<set attributeName="stroke" begin="0s" fill="freeze" additive="replace" to="white" attributeType="XML"/>
+<animate attributeName="fill" begin="indefinite" fill="freeze" additive="replace" dur="1" to="#aa7722" from="#333366" attributeType="XML" id="achievement-0"/>
+<animate attributeName="fill" begin="indefinite" fill="freeze" additive="replace" dur="1" to="#999999" from="#aa7722" attributeType="XML" id="achievement-1"/>
+<animate attributeName="fill" begin="indefinite" fill="freeze" additive="replace" dur="1" to="#dddd55" from="#999999" attributeType="XML" id="achievement-2"/>
+</circle>
+<text font-size="1.4" font-weight="bold" font-family="Arial" alignment-baseline="central" text-anchor="middle" fill="#ffffff" y="0" x="0" id="player-multiplier">1</text>
+<g id="bonuses">
+<g opacity="0">
+<clipPath id="bonus-1">
+<rect height="2.8" y="-1.4" width="2.8" x="-1.4">
+<animate attributeName="y" begin="5s" fill="freeze" additive="replace" dur="0.5" to="-1.4" from="0" attributeType="XML"/>
+<animate attributeName="height" begin="5s" fill="freeze" additive="replace" dur="0.5" to="2.8" from="0" attributeType="XML"/>
+<animate name="close" attributeName="y" begin="6.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="-1.4" attributeType="XML"/>
+<animate name="close" attributeName="height" begin="6.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="2.8" attributeType="XML"/>
+</rect>
+</clipPath>
+<g clip-path="url(#bonus-1)">
+<circle stroke="none" fill="red" r="1.4" cy="0" cx="0"/>
+<circle stroke="none" fill="white" r="0.7" cy="0" cx="0">
+<animateTransform repeatCount="2" begin="5s" fill="freeze" additive="replace" dur="1s" values="1; 1.2; 1" type="scale" attributeType="XML" attributeName="transform"/>
+</circle>
+</g>
+<animate attributeName="opacity" begin="5s" fill="freeze" additive="replace" dur="0.5s" to="1" from="0" attributeType="XML"/>
+<animate name="close" attributeName="opacity" begin="6.5s" fill="freeze" additive="replace" dur="0.5s" to="0" from="1" attributeType="XML"/>
+</g>
+<g opacity="0">
+<clipPath id="bonus-2">
+<rect height="2.8" y="-1.4" width="2.8" x="-1.4">
+<animate attributeName="y" begin="14s" fill="freeze" additive="replace" dur="0.5" to="-1.4" from="0" attributeType="XML"/>
+<animate attributeName="height" begin="14s" fill="freeze" additive="replace" dur="0.5" to="2.8" from="0" attributeType="XML"/>
+<animate name="close" attributeName="y" begin="15.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="-1.4" attributeType="XML"/>
+<animate name="close" attributeName="height" begin="15.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="2.8" attributeType="XML"/>
+</rect>
+</clipPath>
+<g clip-path="url(#bonus-2)">
+<circle stroke="none" fill="red" r="1.4" cy="0" cx="0"/>
+<circle stroke="none" fill="white" r="0.7" cy="0" cx="0">
+<animateTransform repeatCount="2" begin="14s" fill="freeze" additive="replace" dur="1s" values="1; 1.2; 1" type="scale" attributeType="XML" attributeName="transform"/>
+</circle>
+</g>
+<animate attributeName="opacity" begin="14s" fill="freeze" additive="replace" dur="0.5s" to="1" from="0" attributeType="XML"/>
+<animate name="close" attributeName="opacity" begin="15.5s" fill="freeze" additive="replace" dur="0.5s" to="0" from="1" attributeType="XML"/>
+</g>
+<g opacity="0">
+<clipPath id="bonus-3">
+<rect height="2.8" y="-1.4" width="2.8" x="-1.4">
+<animate attributeName="y" begin="28s" fill="freeze" additive="replace" dur="0.5" to="-1.4" from="0" attributeType="XML"/>
+<animate attributeName="height" begin="28s" fill="freeze" additive="replace" dur="0.5" to="2.8" from="0" attributeType="XML"/>
+<animate name="close" attributeName="y" begin="31.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="-1.4" attributeType="XML"/>
+<animate name="close" attributeName="height" begin="31.5s" fill="freeze" additive="replace" dur="0.5" to="0" from="2.8" attributeType="XML"/>
+</rect>
+</clipPath>
+<g clip-path="url(#bonus-3)">
+<circle stroke="none" fill="red" r="1.4" cy="0" cx="0"/>
+<circle stroke="none" fill="white" r="0.7" cy="0" cx="0">
+<animateTransform repeatCount="4" begin="28s" fill="freeze" additive="replace" dur="1s" values="1; 1.2; 1" type="scale" attributeType="XML" attributeName="transform"/>
+</circle>
+</g>
+<animate attributeName="opacity" begin="28s" fill="freeze" additive="replace" dur="0.5s" to="1" from="0" attributeType="XML"/>
+<animate name="close" attributeName="opacity" begin="31.5s" fill="freeze" additive="replace" dur="0.5s" to="0" from="1" attributeType="XML"/>
+</g>
+</g>
+</g>
+</g>
+<g id="targets">
+<g>
+<animateTransform name="player-rotation" begin="3s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="3" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="23" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="6s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="6" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="26" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="9s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="9" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="29" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="12s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="12" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="32" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="15s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="15" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="35" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="18s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="pink" opacity="0">
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="18" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="38" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -40,0 L -40,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="3s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="3" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="23" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="6s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="6" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="26" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="9s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="9" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="29" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="12s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="12" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="32" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="15s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="15" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="35" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+<g>
+<animateTransform name="player-rotation" begin="18s" fill="freeze" additive="replace" dur="20s" from="0" type="rotate" attributeType="XML" attributeName="transform" to="-360" end="60" repeatCount="3"/>
+<g>
+<circle name="color-tester" r="1.4" fill="#3333ff">
+<set attributeName="fill" begin="0s" fill="freeze" additive="replace" to="#3333ff" attributeType="XML"/>
+<animate attributeName="opacity" begin="0" fill="freeze" additive="replace" dur="1" to="0" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="18" fill="freeze" additive="replace" dur="1" to="1" from="0" attributeType="XML"/>
+<animate attributeName="opacity" begin="38" fill="freeze" additive="replace" dur="1" to="0" from="1" attributeType="XML"/>
+<animateMotion begin="0s" dur="0s" path="
+                    M -30,0 L -30,0"/>
+</circle>
+</g>
+</g>
+</g>
+<g id="missiles"/>
+</g>
+</svg>
+<br/>
+<audio controls="controls" autoplay="autoplay" preload="auto" src="../audio/tutoria2.mp3" id="audio-reset">
+<!---->
+</audio>
+</center>
+<audio preload="auto" src="../audio/bonus.wav" id="audio-bonus">
+<!---->
+</audio>
+<audio preload="auto" src="../audio/launch.wav" id="audio-launch">
+<!---->
+</audio>
+<audio preload="auto" src="../audio/explosion.wav" id="audio-explosion">
+<!---->
+</audio>
+<audio preload="auto" src="../audio/reset.wav" id="audio-reset">
+<!---->
+</audio>
+</body>
+</html>

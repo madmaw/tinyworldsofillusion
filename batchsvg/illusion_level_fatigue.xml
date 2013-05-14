@@ -1,0 +1,370 @@
+<level time="62">
+
+    <globals>
+        <attribute entity-type="dot" name="r" value="3"/>
+    </globals>
+
+    <background type="solid">
+        <attribute name="fill" value="#b8b8b8"/>
+    </background>
+
+    <entity type="player">
+        <color-wheel angle-offset="-60">
+            <color to-angle="120" value="#df90df"/>
+            <color to-angle="240" value="#c1c789"/>
+            <color to-angle="360" value="#9ec0c1"/>
+            <rotation cycle-time="13" ccw="true"/>
+        </color-wheel>
+        <bonus begin="2" dur="2"/>
+        <bonus begin="5" dur="2"/>
+        <bonus begin="9" dur="2"/>
+        <bonus begin="21" dur="2"/>
+        <bonus begin="35" dur="2"/>
+        <bonus begin="39" dur="2"/>
+        <bonus begin="45" dur="2"/>
+        <bonus begin="50" dur="2"/>
+
+        <rotation cycle-time="5"/>
+
+        <attribute name="stroke" value="black"/>
+    </entity>
+
+    <!-- wave 1 -->
+
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(30)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="15" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(150)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="15" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(270)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="15" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(90)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="21" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(210)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="21" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(330)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="21" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(0)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="21" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(60)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="18" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(120)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="18" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(180)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="18" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(240)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="18" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(300)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="18" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <!-- wave 2 -->
+
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(30)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(150)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(270)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(90)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="41" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(210)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="41" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(330)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="41" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(0)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(60)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(120)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(180)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(240)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(300)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="23" />
+        <attribute name="opacity" value="1" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <!-- wave 3 -->
+
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(30)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="58" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(150)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="58" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="20" y="0"/>
+        <transform value="rotate(270)"/>
+        <attribute name="fill" value="#9ec0c1"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="58" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(90)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="56" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(210)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="56" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="25" y="0"/>
+        <transform value="rotate(330)"/>
+        <attribute name="fill" value="#df90df"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="56" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(0)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(60)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(120)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(180)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(240)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="30" y="0"/>
+        <transform value="rotate(300)"/>
+        <attribute name="fill" value="#c1c789"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+</level>

@@ -1,0 +1,127 @@
+<batchsvg name-file="illusion_name.xslt" svg-file="illusion_html.xslt">
+	<!-- special value set for animations -->
+
+	<valueset name="target">
+        <value name="web">
+            <property name="level-width">800</property>
+            <property name="level-height">800</property>
+            <property name="level-scale">8</property>
+        </value>
+	</valueset>
+    <valueset name="style">
+        <value name="std">
+            <property name="player-color-default">#333366</property>
+            <property name="player-color-bronze">#aa7722</property>
+            <property name="player-color-silver">#999999</property>
+            <property name="player-color-gold">#dddd55</property>
+            <property name="player-color-multiplier">#ffffff</property>
+        </value>
+    </valueset>
+    <valueset name="interactivity">
+        <value name="play"/>
+        <value name="spin"/>
+        <value name="none"/>
+    </valueset>
+	<valueset name="level">
+        <value name="galaxy">
+            <property name="xml-file">illusion.xml</property>
+            <property name="svg-file">illusion_galaxy_html.xslt</property>
+        </value>
+        <value name="tutoria">
+            <property name="xml-file">illusion_level_tutoria.xml</property>
+            <property name="level-name">Tutoria</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">3</property>
+            <property name="planet-color">white</property>
+            <property name="planet-x">8</property>
+            <property name="planet-y">-25</property>
+            <property name="background-music">../audio/tutoria.mp3</property>
+        </value>
+        <value name="tutoria2">
+            <property name="xml-file">illusion_level_tutoria2.xml</property>
+            <property name="level-name">Tutoria II</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">4</property>
+            <property name="planet-color">white</property>
+            <property name="planet-x">0</property>
+            <property name="planet-y">-15</property>
+            <property name="background-music">../audio/tutoria2.mp3</property>
+            <dependency planet="tutoria" requires="points-bronze"/>
+        </value>
+        <value name="moblin">
+            <property name="xml-file">illusion_level_motion_blindness.xml</property>
+            <property name="level-name">Moblin</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">2</property>
+            <property name="planet-color">#ffff00</property>
+            <property name="planet-x">0</property>
+            <property name="planet-y">20</property>
+            <dependency planet="hermann" requires="points-silver"/>
+            <dependency planet="lichasa" requires="points-bronze"/>
+            <property name="background-music">../audio/scintilla.mp3</property>
+        </value>
+        <value name="lichasa">
+            <property name="xml-file">illusion_level_lilac_chaser.xml</property>
+            <property name="level-name">Lichasa</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">5</property>
+            <property name="planet-color">#ff00ff</property>
+            <property name="planet-x">26</property>
+            <property name="planet-y">4</property>
+            <!--
+            <property name="background-music">../audio/tutoria2.mp3</property>
+            -->
+            <dependency planet="fateeg" requires="points-bronze"/>
+        </value>
+        <value name="fateeg">
+            <property name="xml-file">illusion_level_fatigue.xml</property>
+            <property name="level-name">Fateeg</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">2.3</property>
+            <property name="planet-color">#9ec0c1</property>
+            <property name="planet-x">20</property>
+            <property name="planet-y">-5</property>
+            <dependency planet="tutoria2" requires="points-silver"/>
+            <property name="background-music">../audio/hermann.mp3</property>
+        </value>
+        <value name="hermann">
+            <property name="xml-file">illusion_level_hermann_grid.xml</property>
+            <property name="level-name">Hermann</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">3.2</property>
+            <property name="planet-color">#88aa88</property>
+            <property name="planet-x">-10</property>
+            <property name="planet-y">-5</property>
+            <dependency planet="tutoria2" requires="points-bronze"/>
+            <property name="background-music">../audio/hermann.mp3</property>
+        </value>
+        <value name="scintilla">
+            <property name="xml-file">illusion_level_scintillating_grid.xml</property>
+            <property name="level-name">Scintilla</property>
+            <property name="points-bronze">5</property>
+            <property name="points-silver">10</property>
+            <property name="points-gold">20</property>
+            <property name="planet-size">4</property>
+            <property name="planet-color">red</property>
+            <property name="planet-x">-26</property>
+            <property name="planet-y">2</property>
+            <dependency planet="hermann" requires="points-bronze"/>
+            <property name="background-music">../audio/scintilla.mp3</property>
+        </value>
+	</valueset>
+    <valueset name="outputType">
+        <value>html</value>
+    </valueset>
+</batchsvg>

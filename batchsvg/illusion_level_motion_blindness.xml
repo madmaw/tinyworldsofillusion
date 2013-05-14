@@ -1,0 +1,219 @@
+<level time="62">
+
+    <globals>
+        <attribute entity-type="dot" name="r" value="1.0"/>
+        <attribute entity-type="dot" name="fill" value="yellow"/>
+    </globals>
+
+    <background type="solid">
+        <attribute name="fill" value="black"/>
+    </background>
+
+    <background type="grid" rows="8" cols="8" spacing="9">
+        <attribute name="stroke" value="#3333ff"/>
+        <attribute name="stroke-width" value="0.4"/>
+        <rotation cycle-time="3.5" ccw="true"/>
+        <transform value="scale(1, 0.85)"/>
+    </background>
+
+    <entity type="player">
+        <color-wheel angle-offset="0">
+            <color to-angle="360" value="yellow"/>
+        </color-wheel>
+        <bonus begin="2" dur="2"/>
+        <bonus begin="5" dur="2"/>
+        <bonus begin="9" dur="2"/>
+        <bonus begin="21" dur="2"/>
+        <bonus begin="35" dur="2"/>
+        <bonus begin="39" dur="2"/>
+        <bonus begin="45" dur="2"/>
+        <bonus begin="50" dur="2"/>
+
+        <rotation cycle-time="5"/>
+
+        <attribute name="stroke" value="#aaaaaa"/>
+    </entity>
+
+    <!-- first wave -->
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(90)"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="19" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(210)"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="17" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(330)"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="17" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <!-- second wave -->
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(0)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="37" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(60)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="29" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(120)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="34" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(180)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="37" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(240)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="40" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="30" y="0"/>
+        <transform value="rotate(300)"/>
+
+        <attribute name="opacity" value="0" end="21" />
+        <attribute name="opacity" value="1" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <!-- third wave -->
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(0)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="54" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(45)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="59" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(90)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="52" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(135)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="49" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(180)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="56" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(225)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(270)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="59" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="40" y="0"/>
+        <transform value="rotate(315)"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="1" end="47" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+</level>

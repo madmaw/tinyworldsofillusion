@@ -1,0 +1,94 @@
+<level time="40">
+
+    <globals>
+        <attribute entity-type="dot" name="r" value="1.4"/>
+        <attribute entity-type="dot" name="fill" value="pink"/>
+    </globals>
+
+    <background type="solid">
+        <attribute name="fill" value="#333366"/>
+    </background>
+
+    <entity type="player">
+        <!--
+        <color-wheel angle-offset="-90">
+            <color to-angle="180" value="yellow"/>
+            <color to-angle="360" value="blue"/>
+        </color-wheel>
+        -->
+        <color-wheel angle-offset="0">
+            <color to-angle="360" value="pink"/>
+        </color-wheel>
+        <bonus begin="5" dur="2"/>
+        <bonus begin="14" dur="2"/>
+        <bonus begin="28" dur="4"/>
+
+        <rotation cycle-time="5"/>
+
+        <attribute name="stroke" value="white"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="3" end="60"/>
+
+        <attribute name="opacity" value="0" end="3" />
+        <attribute name="opacity" value="1" end="23" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="6" end="60"/>
+
+        <attribute name="opacity" value="0" end="6" />
+        <attribute name="opacity" value="1" end="26" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="9" end="60"/>
+
+        <attribute name="opacity" value="0" end="9" />
+        <attribute name="opacity" value="1" end="29" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="12" end="60"/>
+
+        <attribute name="opacity" value="0" end="12" />
+        <attribute name="opacity" value="1" end="32" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="15" end="60"/>
+
+        <attribute name="opacity" value="0" end="15" />
+        <attribute name="opacity" value="1" end="35" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+    </entity>
+
+    <entity type="dot">
+        <position x="-40" y="0"/>
+        <rotation cycle-time="20" start="18" end="60"/>
+
+        <attribute name="opacity" value="0" end="18" />
+        <attribute name="opacity" value="1" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+
+
+    </entity>
+
+</level>

@@ -1,0 +1,347 @@
+<level time="62">
+
+    <globals>
+        <attribute entity-type="dot" name="r" value="1.4"/>
+        <attribute entity-type="dot" name="fill" value="black"/>
+    </globals>
+
+    <background type="solid">
+        <attribute name="fill" value="black"/>
+    </background>
+
+    <background type="grid" rows="7" cols="7" spacing="18" r="1.5">
+        <attribute name="fill" value="white"/>
+        <attribute name="stroke" value="#999999"/>
+        <attribute name="stroke-width" value="1.5"/>
+    </background>
+
+    <entity type="player">
+        <color-wheel angle-offset="0">
+            <color to-angle="360" value="black"/>
+        </color-wheel>
+        <bonus begin="2" dur="2"/>
+        <bonus begin="5" dur="2"/>
+        <bonus begin="9" dur="2"/>
+        <bonus begin="21" dur="2"/>
+        <bonus begin="35" dur="2"/>
+        <bonus begin="39" dur="2"/>
+        <bonus begin="45" dur="2"/>
+        <bonus begin="50" dur="2"/>
+
+        <rotation cycle-time="5"/>
+
+        <attribute name="stroke" value="white"/>
+    </entity>
+
+    <!-- first wave -->
+    <entity type="dot" style="graded">
+        <position x="9" y="9"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="10" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="9"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="10" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="-9"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="10" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="-9"/>
+
+        <attribute name="opacity" value="0" end="0" />
+        <attribute name="opacity" value="1" end="10" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <!-- second wave -->
+    <entity type="dot" style="graded">
+        <position x="27" y="9"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="9"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="-9"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="-9"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="27"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="27"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="-27"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="-27"/>
+
+        <attribute name="opacity" value="0" end="10" />
+        <attribute name="opacity" value="0.5" end="20" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <!-- third wave -->
+    <entity type="dot" style="graded">
+        <position x="45" y="9"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="27"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-45" y="9"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="27"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="45" y="-9"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="-27"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-45" y="-9"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="-27"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="45"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="45"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="-45"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="-45"/>
+
+        <attribute name="opacity" value="0" end="20" />
+        <attribute name="opacity" value="0.5" end="30" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <!-- 4th wave -->
+
+    <entity type="dot" style="graded">
+        <position x="9" y="9"/>
+
+        <attribute name="opacity" value="0" end="31" />
+        <attribute name="opacity" value="1" end="35" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="9"/>
+
+        <attribute name="opacity" value="0" end="49" />
+        <attribute name="opacity" value="1" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="-9"/>
+
+        <attribute name="opacity" value="0" end="42" />
+        <attribute name="opacity" value="1" end="48" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="-9"/>
+
+        <attribute name="opacity" value="0" end="57" />
+        <attribute name="opacity" value="1" end="60" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="27" y="9"/>
+
+        <attribute name="opacity" value="0" end="39" />
+        <attribute name="opacity" value="0.5" end="42" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="9"/>
+
+        <attribute name="opacity" value="0" end="44" />
+        <attribute name="opacity" value="0.5" end="50" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="-9"/>
+
+        <attribute name="opacity" value="0" end="56" />
+        <attribute name="opacity" value="0.5" end="60" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="-9"/>
+
+        <attribute name="opacity" value="0" end="33" />
+        <attribute name="opacity" value="0.5" end="39" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="27"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="0.5" end="44" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="27"/>
+
+        <attribute name="opacity" value="0" end="35" />
+        <attribute name="opacity" value="0.5" end="39" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="9" y="-27"/>
+
+        <attribute name="opacity" value="0" end="50" />
+        <attribute name="opacity" value="0.5" end="54" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-9" y="-27"/>
+
+        <attribute name="opacity" value="0" end="40" />
+        <attribute name="opacity" value="0.5" end="46" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+
+    <entity type="dot" style="graded">
+        <position x="45" y="9"/>
+
+        <attribute name="opacity" value="0" end="36" />
+        <attribute name="opacity" value="0.5" end="40" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="27"/>
+
+        <attribute name="opacity" value="0" end="46" />
+        <attribute name="opacity" value="0.5" end="50" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-45" y="9"/>
+
+        <attribute name="opacity" value="0" end="50" />
+        <attribute name="opacity" value="0.5" end="55" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-27" y="27"/>
+
+        <attribute name="opacity" value="0" end="32" />
+        <attribute name="opacity" value="0.5" end="38" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="45" y="-9"/>
+
+        <attribute name="opacity" value="0" end="41" />
+        <attribute name="opacity" value="0.5" end="45" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="27" y="-27"/>
+
+        <attribute name="opacity" value="0" end="50" />
+        <attribute name="opacity" value="0.5" end="54" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+    <entity type="dot" style="graded">
+        <position x="-45" y="-9"/>
+
+        <attribute name="opacity" value="0" end="41" />
+        <attribute name="opacity" value="0.5" end="45" dur="1"/>
+        <attribute name="opacity" value="0" dur="1"/>
+    </entity>
+</level>
